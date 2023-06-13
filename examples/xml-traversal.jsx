@@ -1,6 +1,6 @@
 ﻿#include "../extendables.jsx";
 
-if (!app.is('indesign') {
+if (!app.is('indesign')) {
 	throw new EnvironmentError("This script only works in Adobe InDesign");
 }
 
@@ -8,7 +8,7 @@ if (!app.is('indesign') {
 app.activeDocument = app.documents.add();
 Number.range(10).forEach(function () {
 	current('document').pages.add();
-}
+});
 
 // create a B-culture master
 current('document').masterSpreads.add(1, {'namePrefix': 'B', 'name': 'culture'});
